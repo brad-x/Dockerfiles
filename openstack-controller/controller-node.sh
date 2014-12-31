@@ -25,7 +25,7 @@ yum -y install mariadb mariadb-server MySQL-python
 
 #edit /etc/my.cnf
 sed -i.bak "10i\\
-bind-address = $CONTROLLER_IP\n\
+bind-address = 0.0.0.0 \
 default-storage-engine = innodb\n\
 innodb_file_per_table\n\
 collation-server = utf8_general_ci\n\
