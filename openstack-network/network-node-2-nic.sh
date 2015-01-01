@@ -8,8 +8,7 @@ systemctl enable ntpd.service
 systemctl start ntpd.service
 
 #openstack repos
-yum -y install yum-plugin-priorities
-yum -y install http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-2.noarch.rpm
+yum -y install yum-plugin-priorities epel-release
 yum -y install http://rdo.fedorapeople.org/openstack-juno/rdo-release-juno.rpm
 yum -y upgrade
 #yum -y install openstack-selinux
