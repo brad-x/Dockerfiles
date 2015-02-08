@@ -1,4 +1,5 @@
 docker run -ti \
 	--net="host" --privileged=true \
+	-v /run/openvswitch:/run/openvswitch \
 	--name openstack-network \
-	-e container=lxc openstack-network-2
+	-e container=lxc bradlaue/openstack-network
