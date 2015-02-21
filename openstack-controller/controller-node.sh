@@ -4,9 +4,11 @@
 source ./config
 
 #install ntp
-yum -y install ntp
+yum -y install ntp cronie
 systemctl enable ntpd.service
 systemctl start ntpd.service
+systemctl enable crond.service
+systemctl start crond.service 
 
 #openstack repos
 yum -y install yum-plugin-priorities epel-release
