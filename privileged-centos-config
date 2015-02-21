@@ -107,3 +107,4 @@ lxc.mount.entry = sysfs sys sysfs rw 0 0
 #        Note: This may potentially collide with other containers of same name!
 #lxc.network.veth.pair = v-juno-controller-e0
 
+lxc.kmsg = 0
